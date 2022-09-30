@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+}
+
+.App {
+    padding-top: 30px;
+    width: 800px;
+}
+
+.post {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    margin-top: 1em;
+    border: 2px solid rgb(137, 219, 137);
+
+}
+.filter__hr{
+    color: rgb(60, 191, 231);
+    margin: 30px 0;
+    box-shadow: 1px 1px 5px rgb(60, 191, 231);
+}

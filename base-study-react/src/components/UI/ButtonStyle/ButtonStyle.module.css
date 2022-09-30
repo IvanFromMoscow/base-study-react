@@ -1,0 +1,16 @@
+.button {
+    display: block;
+    padding: 10px 40px;
+    margin: 10px 0;
+    font-size: 1em;
+    background: transparent;
+    border: 2px solid rgb(137, 219, 137);
+    box-shadow: 1px 1px 4px  rgb(137, 219, 137);
+    transition: box-shadow linear .2s;
+}
+
+.button:hover {
+    box-shadow: 1px 1px 5px  rgb(137, 219, 137),
+                1px 1px 10px  rgb(137, 219, 137),
+                1px 1px 15px  rgb(137, 219, 137);
+}
