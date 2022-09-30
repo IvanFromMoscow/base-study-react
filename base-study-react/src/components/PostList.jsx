@@ -1,16 +1,19 @@
 import React from 'react'
 import PostItem from './PostItem'
 
-const PostList = ({posts, title, deletePost}) => {
+const PostList = ({ posts, title, deletePost }) => {
     return (
         <div>
-            <h1 style={{ textAlign: "center" }}>
-                {title}
-            </h1>
+            
+                {!posts.length 
+                    ? <h1 style={{ textAlign: "center" }}>Not found post by your query!</h1> 
+                    : <h1>{title}</h1>}
+            
             {
-                posts.map((post, index) =>
-                    <PostItem number={index + 1} post={post} key={post.id} deletePost={deletePost} />
-            )}
+                posts.map(
+                    (post, index) => <PostItem post={post} key={post.id} deletePost={deletePost} />
+                )
+            }
         </div>
     )
 }
